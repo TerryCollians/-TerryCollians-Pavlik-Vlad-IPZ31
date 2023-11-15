@@ -14,6 +14,11 @@ body{
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+    color:white;
+}
+
 h1, h2 , h3 , h4 , h5 , h6 {
     padding: 0;
     margin:0;
@@ -35,7 +40,7 @@ ul ,li {
   }
 
 .header{
-    background: no-repeat center top / cover;
+    
     padding-top: 24px;
     
 }
@@ -60,8 +65,17 @@ ul ,li {
 .navigation > li a:hover{
     color:#2196F3;
 }
+.navigation > li a:focus{
+    color:#2196F3;
+}
 
 .mail:hover{
+    color:#2196F3;
+}
+.mail:focus{
+    color:#2196F3;
+}
+.tel:focus{
     color:#2196F3;
 }
 .tel:hover{
@@ -133,34 +147,157 @@ letter-spacing: 0.78px;
 }
 
 .bg{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: #2F303A;
-    height: 600px;
     
-    flex-shrink: 0;     
+    background: #2F303A;
 }
 
 .bgtext{
-    width: 696px;
     color: #FFF;
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 136.364%;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-
+text-align: center;
+font-family: Roboto;
+font-size: 44px;
+font-style: normal;
+font-weight: 900;
+line-height: 60px; /* 136.364% */
+letter-spacing: 2.64px;
+text-transform: uppercase;
+}
+.btn{
+    width: 200px;
+height: 50px;
+flex-shrink: 0;
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+border-radius: 4px;
+background: #2196F3;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.btn{
+.btn:hover{
+    border: #2196F3 2px;
+}
+
+.btn:focus{
+    border: #2196F3 2px;
+}
+
+
+
+.ph{
+    color: #212121;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
+.pt{
+    color: #757575;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.42px;
+}
+
+.jobtext , .stafftext {
+    color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+}
+
+.person-name{
+    color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+.person-job{
+    color: #757575;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+
+.footerbg{
+
+flex-shrink: 0;
+    background: #2F303A;
+}
+
+.address{
     color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 187.5%;
-    letter-spacing: 0.96px;
-    border-radius: 4px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 114.286% */
+letter-spacing: 0.42px;
+}
+
+.email-footer{
+    color: rgba(255, 255, 255, 0.60);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 114.286% */
+letter-spacing: 0.42px;
+}
+
+.tel-footer{
+    color: rgba(255, 255, 255, 0.60);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 114.286% */
+letter-spacing: 0.42px;
+}
+
+
+.logo-footer{
+margin-right: 90px;
+color: #FFF;
+font-family: Raleway;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
+text-decoration: none;
+}
+
+.logo-footer span{
+color: #2196F3;
+font-family: Raleway;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
 }
