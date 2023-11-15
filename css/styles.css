@@ -1,0 +1,166 @@
+html{
+
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body{
+    padding :0;
+    margin:0;
+    font-family: Roboto;
+    color: black;
+    font-size: 16px;
+    
+    margin: 0 auto;
+}
+
+h1, h2 , h3 , h4 , h5 , h6 {
+    padding: 0;
+    margin:0;
+    
+}
+
+ul ,li {
+    display:block;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.header{
+    background: no-repeat center top / cover;
+    padding-top: 24px;
+    
+}
+.navigation{
+    display: flex;
+    
+}
+
+
+.navigation > li a  {
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 50px;
+    color: #212121;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;   
+}
+
+.navigation > li a:hover{
+    color:#2196F3;
+}
+
+.mail:hover{
+    color:#2196F3;
+}
+.tel:hover{
+    color:#2196F3;
+}
+
+
+.mail{
+    font-size: 14px;
+    text-decoration: none;
+    
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    margin-left: 354px;
+    
+    
+}
+
+.tel{
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: auto;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+
+
+
+
+.toplinebg{
+    display: flex;
+    align-items: center;
+    
+    height: 80px;
+    flex-shrink: 0;
+
+}
+
+.logo {
+    margin-right: 90px;
+    color: #000;
+font-family: Raleway;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
+text-decoration: none;
+}
+.logo span{
+    color: #2196F3;
+font-family: Raleway;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #2F303A;
+    height: 600px;
+    
+    flex-shrink: 0;     
+}
+
+.bgtext{
+    width: 696px;
+    color: #FFF;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 136.364%;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+
+}
+
+.btn{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 187.5%;
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
