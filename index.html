@@ -12,8 +12,7 @@
 <body>
 
     <header id="header" class="header">
-        <div class="container">
-            <div class="toplinebg">
+        <div class="container">  
                 <a href="index.html" class="logo"><span>Web</span>Studio</a>
                 <nav>
                    <ul class = "navigation">
@@ -33,25 +32,27 @@
                     </ul>
                 </nav>        
                 
-                <a href="maito:info@devstudio.com" class="mail">info@devstudio.com</a>    
-                <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
-                
-                
-            </div>
+                <ul>
+                    <li>
+                        <a href="maito:info@devstudio.com" class="mail">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a> 
+                    </li>
+                </ul>
         </div>
-    </header>
-
-    <main>
-        
-
-        <section id="about" class="about">
-            
-            <div class="container">
+        <section id = "bgin" class ="bgin">
                 <div class="bg">
                     <h1 class="bgtext">Ефективні рішення для вашого бізнесу</h1>
                     <button class="btn" type="button">Замовити послугу</button>
                 </div>
-                <div class="about-nature">
+        </section>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            
+            <div class="container">
                     <ul class="nature">
                         <li class="point">
                             <!-- 
@@ -73,19 +74,25 @@
                             <h3 class="ph">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                             <p class="pt">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                         </li>
-                    </ul>
-                </div>   
+                    </ul> 
             </div>
         </section>
 
         <section id="work" class="work">
             <div class="container">
-                <div class="job">
+                
                     <h2 class="jobtext">Чим ми займаємося</h2>
-                    <img src="img/img1.jpg" width="370" height="294" alt="Фото з клавіатурою">
-                    <img src="img/img2.jpg" width="370" height="294" alt="Фото з телефоном">
-                    <img src="img/img3.jpg" width="370" height="294" alt="Фото з палітрою">
-                </div>
+                    <ul class = "photojob">
+                        <li>
+                            <img src="img/img1.jpg" width="370" height="294" alt="Фото з клавіатурою">
+                        </li>
+                        <li>
+                            <img src="img/img2.jpg" width="370" height="294" alt="Фото з телефоном">
+                        </li>
+                        <li>
+                            <img src="img/img3.jpg" width="370" height="294" alt="Фото з палітрою">
+                        </li>
+                    </ul>
             </div>
         </section>
         <section id="staff" class="staff">
@@ -94,22 +101,22 @@
                 <ul class = "staffinfo">
                     <li class="person">
                         <img src="img/person1.jpg" width="270" height="260" alt="Ігор Дем'яненко">
-                        <h4 class="person-name">Ігор Дем'яненко</h4>
+                        <h3 class="person-name">Ігор Дем'яненко</h3>
                         <p class="person-job">Product Designer</p>
                     </li>
                     <li class="person">
                         <img src="img/person2.jpg" width="270" height="260" alt="Ольга Рєпіна">
-                        <h4 class="person-name">Ольга Рєпіна</h4>
+                        <h3 class="person-name">Ольга Рєпіна</h3>
                         <p class="person-job">Frontend Developer</p>
                     </li>
                     <li class="person">
                         <img src="img/person3.jpg" width="270" height="260" alt="Микола Тарасов">
-                        <h4 class="person-name">Микола Тарасов</h4>
+                        <h3 class="person-name">Микола Тарасов</h3>
                         <p class="person-job">Marketing</p>
                     </li>
                     <li class="person">
                         <img src="img/person4.jpg" width="270" height="260" alt="Михайло Єрмаков">
-                        <h4 class="person-name">Михайло Єрмаков</h4>
+                        <h3 class="person-name">Михайло Єрмаков</h3>
                         <p class="person-job">UI Designer</p>
                     </li>
                 </ul>
@@ -122,12 +129,13 @@
     <footer id="footer" class="footer">
         <div class="container">
             <div class="footerbg">
-            <a href="index.html" class="logo-footer"><span>Web</span>Studio</a>
+            <a href="index.html" class="logo-footer" rel="nofollow"><span>Web</span>Studio</a>
                 <address>
-                    <a class="adress" href="http://surl.li/neaiq">м. Київ, пр-т Лесі Українки, 26</a>
+                    <a class="adress" href="http://surl.li/neaiq" rel="nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+                    <a class="email-footer" href="maito:info@devstudio.com" rel="nofollow">info@devstudio.com</a>    
+                    <a class="tel-footer" href="tel:+380961111111" rel="nofollow">+38 096 111 11 11</a> 
                 </address> 
-                <a class="email-footer" href="maito:info@devstudio.com">info@devstudio.com</a>    
-                <a class="tel-footer" href="tel:+380961111111">+38 096 111 11 11</a>   
+                  
             </div>         
         </div>
     </footer>
