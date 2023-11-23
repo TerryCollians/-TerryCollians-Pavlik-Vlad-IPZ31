@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +33,7 @@
                     </ul>
                 </nav>        
                 
-                <ul>
+                <ul class="header-contacts">
                     <li>
                         <a href="maito:info@devstudio.com" class="mail">info@devstudio.com</a>
                     </li>
@@ -42,10 +43,12 @@
                 </ul>
         </div>
         <section id = "bgin" class ="bgin">
+            
                 <div class="bg">
                     <h1 class="bgtext">Ефективні рішення для вашого бізнесу</h1>
                     <button class="btn" type="button">Замовити послугу</button>
                 </div>
+          
         </section>
     </header>
 
@@ -83,14 +86,14 @@
                 
                     <h2 class="jobtext">Чим ми займаємося</h2>
                     <ul class = "photojob">
-                        <li>
-                            <img src="img/img1.jpg" width="370" height="294" alt="Фото з клавіатурою">
+                        <li class="photo-list">
+                            <img  class= "job-img" src="img/img1.jpg" width="370" height="294" alt="Фото з клавіатурою">
                         </li>
-                        <li>
-                            <img src="img/img2.jpg" width="370" height="294" alt="Фото з телефоном">
+                        <li class="photo-list">
+                            <img class= "job-img" src="img/img2.jpg" width="370" height="294" alt="Фото з телефоном">
                         </li>
-                        <li>
-                            <img src="img/img3.jpg" width="370" height="294" alt="Фото з палітрою">
+                        <li class="photo-list">
+                            <img class= "job-img" src="img/img3.jpg" width="370" height="294" alt="Фото з палітрою">
                         </li>
                     </ul>
             </div>
@@ -127,17 +130,20 @@
 
     
     <footer id="footer" class="footer">
-        <div class="container">
+        
             <div class="footerbg">
-            <a href="index.html" class="logo-footer" rel="nofollow"><span>Web</span>Studio</a>
-                <address>
-                    <a class="adress" href="http://surl.li/neaiq" rel="nofollow">м. Київ, пр-т Лесі Українки, 26</a>
-                    <a class="email-footer" href="maito:info@devstudio.com" rel="nofollow">info@devstudio.com</a>    
-                    <a class="tel-footer" href="tel:+380961111111" rel="nofollow">+38 096 111 11 11</a> 
-                </address> 
-                  
+                <div class="container">
+                    <p class="footer-logo">
+                    <a href="index.html" class="logo-footer" rel="nofollow"><span>Web</span>Studio</a>
+                    </p>
+                    <address class="footer-info">
+                        <a class="adress" href="http://surl.li/neaiq" rel="nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+                        <a class="email-footer" href="maito:info@devstudio.com" rel="nofollow">info@devstudio.com</a>    
+                        <a class="tel-footer" href="tel:+380961111111" rel="nofollow">+38 096 111 11 11</a> 
+                    </address> 
+                </div>  
             </div>         
-        </div>
+        
     </footer>
 </body>
 </html>

@@ -8,6 +8,12 @@
     --none_black: #212121;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 
 html{
 
@@ -28,7 +34,7 @@ body{
 a{
     text-decoration: none;
     color:white;
-}
+} 
 
 h1, h2 , h3 , h4 , h5 , h6 {
     padding: 0;
@@ -50,27 +56,28 @@ ul ,li {
     margin-right: auto;
   }
 
+
+/*-----HEADER start------*/
+
 .header{
-    
-    padding-top: 24px;
-    
+    display: flexbox;
+    width: 100%;
+    border-bottom: 1px solid #EEE;
 }
+/*---NAVIGATION START---*/
 .navigation{
     display: flex;
-    
 }
-
-
 .navigation > li a  {
     text-decoration: none;
     font-size: 14px;
-    margin-right: 50px;
     color: var(--none_black);
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;   
+    margin-right: 50px;
 }
 
 .navigation > li a:hover{
@@ -93,11 +100,15 @@ ul ,li {
     color:var(--sec_color);
 }
 
+.header-contacts{
+    margin-left: auto;
+    display: flex;
+    margin-right: 40px;
+}
 
 .mail{
     font-size: 14px;
-    text-decoration: none;
-    
+    text-decoration: none;    
     color: var(--grey);
     font-family: Roboto;
     font-size: 14px;
@@ -105,15 +116,12 @@ ul ,li {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
-    margin-left: 354px;
-    
-    
+    margin-right: 40px;
 }
 
 .tel{
     font-size: 14px;
     text-decoration: none;
-    margin-left: auto;
     color: var(--grey);
     font-family: Roboto;
     font-size: 14px;
@@ -123,17 +131,12 @@ ul ,li {
     letter-spacing: 0.28px;
 }
 
-
-
-
-
 .header > .container{
     display: flex;
     align-items: center;
-    
-    height: 80px;
+    height: auto;
     flex-shrink: 0;
-
+    min-height: 80px;
 }
 
 .logo {
@@ -156,38 +159,50 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 0.78px;
 }
+/*---NAVIGATION END---*/
 
 .bg{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
     background: var(--basic_color);
+    row-gap: 30px;
+    min-height: 600px;
+    
 }
 
 .bgtext{
+    max-width: 696px;
+    font-size: 44px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 136.364%;
     color: var(--white);
-text-align: center;
-font-family: Roboto;
-font-size: 44px;
-font-style: normal;
-font-weight: 900;
-line-height: 60px; /* 136.364% */
-letter-spacing: 2.64px;
-text-transform: uppercase;
+    text-align: center;
+    font-family: Roboto;
+    text-transform: uppercase;
+    letter-spacing: 2.64px;
+  
 }
 .btn{
-    width: 200px;
-height: 50px;
-flex-shrink: 0;
     color: var(--white);
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px; /* 187.5% */
-letter-spacing: 0.96px;
-border-radius: 4px;
-background: var(--sec_color);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+    cursor: pointer;
+    min-height: 50px;
 }
 
 .btn:hover{
@@ -197,133 +212,197 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 .btn:focus{
     border: var(--sec_color) 2px;
 }
+/*-----HEADER end------*/
 
-
-
+/*-----ABOUT start------*/
+.nature{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 .ph{
     color: var(--none_black);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.42px;
-text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    max-width: 270px;
 }
 
 .pt{
     color: var(--grey);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+    max-width: 270px;
+}
+/*-----ABOUT end------*/
+
+/*-----WORK start------*/
+.photojob{
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 188px;
+}
+
+.job-img{
+  margin-right: 30px;  
+}
+
+
+/*-----WORK end------*/
+
+/*-----STAFF start------*/
+.staff{
+    background: #F5F4FA;
+    
+}
+
+.staffinfo{
+    display: flex;
+    
+}
+
+.stafftext{
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+.person{
+    margin-right: 30px; 
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    margin-bottom: 94px;
+
+/* material shadow v1 */
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .jobtext , .stafftext {
     color: var(--none_black);
-text-align: center;
-font-family: Roboto;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.08px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
 }
 
 .person-name{
     color: var(--none_black);
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.48px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
 }
 
 .person-job{
     color: var(--grey);
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+/*-----STAFF end------*/
+
+/*-----FOOTER start------*/
+.footerbg{
+    width: 100%;
+    padding: 60px 0;
+    flex-direction: column;
+    height: auto;
+    flex-shrink: 0;
+    background: #2F303A;
+    min-height: 251px;
 }
 
-.footerbg{
-
-flex-shrink: 0;
-    background: #2F303A;
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .address{
     color: var(--white);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 114.286% */
-letter-spacing: 0.42px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: 0.42px;
 }
 
 .email-footer{
     color: var(--grey);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 114.286% */
-letter-spacing: 0.42px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: 0.42px;
 }
 
 .tel-footer{
     color: var(--grey);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 114.286% */
-letter-spacing: 0.42px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: 0.42px;
 }
 
-
+.footer-logo{
+    margin-bottom: 28px;
+}
 .logo-footer{
-margin-right: 90px;
-color: var(--white);
-font-family: Raleway;
-font-size: 26px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.78px;
-text-decoration: none;
+    margin-right: 90px;
+    color: var(--white);
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    text-decoration: none;
 }
 
 .logo-footer span{
-color: var(--sec_color);
-font-family: Raleway;
-font-size: 26px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.78px;
+    color: var(--sec_color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
 }
+/*-----FOOTER end------*/
 
+
+/*-----PORTFOLIO-----*/
+
+/*----FILTERS start*/
 .navbar{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul.navbar li button.pbtn {
-    border-radius: 4px;
-    background: var(--white);
-    width: 125px;
-    height: 38px;
-    flex-shrink: 0;
-    color: var(--none_black);
+    color: #212121;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -331,22 +410,46 @@ ul.navbar li button.pbtn {
     font-weight: 500;
     line-height: 26px; /* 162.5% */
     letter-spacing: 0.48px;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    
+    border-radius: 4px;
+    background: #F5F4FA;
+    border-style: none;
+    width: 125px;
+    min-height: 38px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 8px;
+    margin-top: 94px;
+    margin-bottom: 54px;
+    cursor: pointer;
 }
 
 ul.navbar li button.pbtn:hover{
     color: var(--white);
     border-radius: 4px;
-background: var(--sec_color);
+    background: var(--sec_color);
 }
 
 ul.navbar li button.pbtn:focus{
     color: var(--white);
     border-radius: 4px;
-background: var(--sec_color);
+    background: var(--sec_color);
+}
+/*----FILTERS end*/
+
+/*----GRID start----*/
+
+
+.portfolios{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(3, 1fr);
 }
 
+.portfolios-item{
+    margin-bottom: 94px;
+    border: 1px solid #EEE;
+}
 .pname{
     color: var(--none_black);
     font-family: Roboto;
@@ -356,6 +459,7 @@ background: var(--sec_color);
     line-height: 36px; /* 200% */
     letter-spacing: 1.08px;
     width: 322px;
+    padding-left: 24px;
 }
 
 .cat{
@@ -367,4 +471,11 @@ background: var(--sec_color);
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.48px;
     width: 322px;
+    padding-left: 24px;
 }
+
+
+
+
+/*----GRID end----*/
+
