@@ -21,13 +21,16 @@ html{
     font-size: 14px;
 }
 
+p{
+    margin: 0;
+}
+
 body{
     padding :0;
     margin:0;
     font-family: 'Roboto' , sans-serif;
     color: var(--black);
     font-style: normal;
-    margin: 0 auto;
     font-weight: 400;
     line-height: normal;
 }
@@ -40,6 +43,7 @@ a,button{
 
 button{
     cursor: pointer;
+    border: 0;
 }
 
 address{
@@ -87,6 +91,10 @@ ul ,li {
     color: var(--none_black);
     font-weight: 500;
     letter-spacing: 0.28px;   
+    
+}
+
+.navigation__item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -110,11 +118,16 @@ ul ,li {
     color:var(--sec_color);
 }
 
-.header-contacts{
+.contacts{
     margin-left: auto;
     display: flex;
+    
+}
+
+.contacts__item:not(:last-child) {
     margin-right: 40px;
 }
+
 
 .mail{
     font-size: 14px;
@@ -123,7 +136,6 @@ ul ,li {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    margin-right: 40px;
 }
 
 .tel{
@@ -208,11 +220,13 @@ letter-spacing: 0.78px;
 /*-----HEADER end------*/
 
 /*-----ABOUT start------*/
+.about{
+    padding-top: 94px;
+}
+
 .about__list{
     display: flex;
-    justify-content: space-around;
-    margin-top: 94px;
-    margin-bottom: 94px;
+    gap: 30px;
 }
 .about__h{
     color: var(--none_black);
@@ -234,6 +248,10 @@ letter-spacing: 0.78px;
 /*-----ABOUT end------*/
 
 /*-----WORK start------*/
+
+.work{
+    padding-top: 94px;
+}
 .work__list{
     margin-top: 50px;
     display: flex;
@@ -248,9 +266,13 @@ letter-spacing: 0.78px;
 /*-----WORK end------*/
 
 /*-----STAFF start------*/
+
+
 .staff{
     background: #F5F4FA;
-    
+    padding-top: 94px;
+    padding-bottom: 94px;
+
 }
 
 .staff__list{
@@ -259,17 +281,18 @@ letter-spacing: 0.78px;
 }
 
 .stafftext{
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 .staff__item{
-    margin-right: 30px; 
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
-    margin-bottom: 94px;
+    
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
 
-/* material shadow v1 */
-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+.staff__item:not(:last-child)
+{
+    margin-right: 30px
 }
 
 .work__text , .stafftext {
@@ -280,7 +303,13 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     letter-spacing: 1.08px;
 }
 
+.staff__desc{
+    
+    padding: 30px;
+}
+
 .staff__name{
+    width: 100%;
     color: var(--none_black);
     text-align: center;
     font-size: 16px;
@@ -326,7 +355,6 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 
 
 .footer__logo{
-    margin-right: 90px;
     color: var(--white);
     font-family: 'Raleway' , sans-serif;
     font-size: 26px;
@@ -348,10 +376,16 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 /*-----PORTFOLIO-----*/
 
 /*----FILTERS start*/
+
+.filters{
+    padding-top: 94px;
+}
+
 .filters__list{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
 }
 
 .filters__item button.filters__button {
@@ -364,13 +398,9 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     border-radius: 4px;
     background: #F5F4FA;
     border-style: none;
-    width: 125px;
-    min-height: 38px;
     height: auto;
     flex-shrink: 0;
-    margin-right: 8px;
-    margin-top: 94px;
-    margin-bottom: 54px;
+    padding: 6px 22px;
 }
 
 .filters__item button.filters__button:hover{
@@ -388,6 +418,9 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 
 /*----GRID start----*/
 
+.portfolios{
+    padding-top: 50px;
+}
 
 .portfolios__list{
     display: grid;
@@ -397,7 +430,6 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 }
 
 .portfolios-item{
-    margin-bottom: 94px;
     border: 1px solid #EEE;
 }
 .portfolios__name{
