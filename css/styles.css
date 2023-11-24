@@ -251,16 +251,15 @@ letter-spacing: 0.78px;
 
 .work{
     padding-top: 94px;
+    padding-bottom: 94px;
+    
 }
 .work__list{
     margin-top: 50px;
     display: flex;
-    margin-bottom: 188px;
+    gap: 30px;
 }
 
-.work__img{
-  margin-right: 30px;  
-}
 
 
 /*-----WORK end------*/
