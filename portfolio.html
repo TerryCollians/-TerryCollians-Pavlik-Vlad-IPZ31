@@ -15,18 +15,18 @@
 
     <header id="header" class="header">
         <div class="container">  
-                <a href="index.html" class="logo"><span>Web</span>Studio</a>
+                <a href="index.html" class="header__logo"><span>Web</span>Studio</a>
                 <nav>
                    <ul class = "navigation">
-                        <li>
-                            <a href="#">Студія</a>
+                        <li class="navigation__item">
+                            <a href="index.html">Студія</a>
                             
                         </li>
-                        <li>
+                        <li class="navigation__item">
                             <a href="portfolio.html">Портфоліо</a>
                             
                         </li>
-                        <li>
+                        <li class="navigation__item">
                             <a href="#">Контакти</a>
                             
                         </li>
@@ -43,64 +43,65 @@
                     </li>
                 </ul>
         </div>
+        
     </header>
     <main>
-        <section class="p-ctegories" id="p-ctegories">
+        <section class="filters" id="filters">
             <div class="container">
-                <ul class="navbar">
-                    <li><button class="pbtn" type="button">Усі</button></li>
-                    <li><button class="pbtn" type="button">Веб-сайти</button></li>
-                    <li><button class="pbtn" type="button">Додатки</button></li>
-                    <li><button class="pbtn" type="button">Дизайн</button></li>
-                    <li><button class="pbtn" type="button">Маркетинг</button></li>               
+                <ul class="filters__list">
+                    <li class="filters__item"><button class="filters__button" type="button">Усі</button></li>
+                    <li class="filters__item"><button class="filters__button" type="button">Веб-сайти</button></li>
+                    <li class="filters__item"><button class="filters__button" type="button">Додатки</button></li>
+                    <li class="filters__item"><button class="filters__button" type="button">Дизайн</button></li>
+                    <li class="filters__item"><button class="filters__button" type="button">Маркетинг</button></li>               
                 </ul>
                 
 
-                <ul class="portfolios">
+                <ul class="portfolios__list">
                     <li class="portfolios-item">
                         <img src="img/technokriak.jpg" alt="Технокряк">
-                        <h3 class="pname">Технокряк</h3>
-                        <p class="cat">Веб-сайт</p>
+                        <h3 class="portfolios__name">Технокряк</h3>
+                        <p class="portfolios__desc">Веб-сайт</p>
                     </li>
                     <li class="portfolios-item">
                         <img src="img/posterneworlean.jpg" alt="Постер New Orlean">
-                        <h3 class="pname">Постер New Orlean vs Golden Star</h3>
-                        <p class="cat">Дизайн</p>
+                        <h3 class="portfolios__name">Постер New Orlean vs Golden Star</h3>
+                        <p class="portfolios__desc">Дизайн</p>
                     </li>
                     <li class="portfolios-item">
                         <img src="img/seafood.jpg" alt="Ресторан Seafood">
-                        <h3 class="pname">Ресторан Seafood</h3>
-                        <p class="cat">Додаток</p>
+                        <h3 class="portfolios__name">Ресторан Seafood</h3>
+                        <p class="portfolios__desc">Додаток</p>
                     </li>
                     <li class="portfolios-item">
                         <img src="img/projectprime.jpg" alt="Проєкт Прайм">
-                        <h3 class="pname">Проєкт Prime</h3>
-                        <p class="cat">Маркетинг</p>
+                        <h3 class="portfolios__name">Проєкт Prime</h3>
+                        <p class="portfolios__desc">Маркетинг</p>
                     </li>
                     <li class="portfolios-item">
                         <img src="img/boxes.jpg" alt="Проєкт Boxes">
-                        <h3 class="pname">Проєкт Boxes</h3>
-                        <p class="cat">Додаток</p>
+                        <h3 class="portfolios__name">Проєкт Boxes</h3>
+                        <p class="portfolios__desc">Додаток</p>
                     </li>
                     <li class="portfolios-item">
                         <img src="img/inspiration.jpg" alt="Inspiration has no Borders">
-                        <h3 class="pname">Inspiration has no Borders</h3>
-                        <p class="cat">Веб-сайт</p>
+                        <h3 class="portfolios__name">Inspiration has no Borders</h3>
+                        <p class="portfolios__desc">Веб-сайт</p>
                     </li>
                     <li class="portfolios-item">
                         <img src="img/limited.jpg" alt="Видання Limited Edition">
-                        <h3 class="pname">Видання Limited Edition</h3>
-                        <p class="cat">Дизайн</p>
+                        <h3 class="portfolios__name">Видання Limited Edition</h3>
+                        <p class="portfolios__desc">Дизайн</p>
                     </li>
                     <li class="portfolios-item">
                         <img src="img/projlab.jpg" alt="Проєкт LAB">
-                        <h3 class="pname">Проєкт LAB</h3>
-                        <p class="cat">Маркетинг</p>
+                        <h3 class="portfolios__name">Проєкт LAB</h3>
+                        <p class="portfolios__desc">Маркетинг</p>
                     </li>
                     <li class="portfolios-item">
                         <img src="img/growing.jpg" alt="Growing Business">
-                        <h3 class="pname">Growing Business</h3>
-                        <p class="cat">Додаток</p>
+                        <h3 class="portfolios__name">Growing Business</h3>
+                        <p class="portfolios__desc">Додаток</p>
                     </li>
                 </ul>
             </div>
@@ -109,20 +110,16 @@
 
     </main>
     <footer id="footer" class="footer">
-          
-        <div class="footerbg">
+        <div class="footer__info">
             <div class="container">
-                <p class="footer-logo">
-                <a href="index.html" class="logo-footer" rel="nofollow"><span>Web</span>Studio</a>
-                </p>
-                <address class="footer-info">
-                    <a class="adress" href="http://surl.li/neaiq" rel="nofollow">м. Київ, пр-т Лесі Українки, 26</a>
-                    <a class="email-footer" href="maito:info@devstudio.com" rel="nofollow">info@devstudio.com</a>    
-                    <a class="tel-footer" href="tel:+380961111111" rel="nofollow">+38 096 111 11 11</a> 
+                <a href="index.html" class="footer__logo" ><span>Web</span>Studio</a>     
+                <address class="footer__link">
+                    <a class="footer__location" href="http://surl.li/neaiq" rel="nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+                    <a class="footer__email" href="maito:info@devstudio.com" >info@devstudio.com</a>    
+                    <a class="footer__tel" href="tel:+380961111111" >+38 096 111 11 11</a> 
                 </address> 
-            </div>  
-        </div>         
-    
+            </div>
+        </div>                
     </footer>
 </body>
 </html>

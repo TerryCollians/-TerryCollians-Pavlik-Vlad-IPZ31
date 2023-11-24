@@ -44,6 +44,10 @@ button{
 
 address{
     font-style: normal;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.42px;
 }
 
 h1, h2 , h3 , h4 , h5 , h6 {
@@ -78,8 +82,7 @@ ul ,li {
 .navigation{
     display: flex;
 }
-.navigation > li a  {
-    text-decoration: none;
+.navigation__item a  {
     font-size: 14px;
     color: var(--none_black);
     font-weight: 500;
@@ -87,10 +90,10 @@ ul ,li {
     margin-right: 50px;
 }
 
-.navigation > li a:hover{
+.navigation__item a:hover{
     color: var(--sec_color);
 }
-.navigation > li a:focus{
+.navigation__item a:focus{
     color:var(--sec_color);
 }
 
@@ -140,7 +143,7 @@ ul ,li {
     min-height: 80px;
 }
 
-.logo {
+.header__logo {
     margin-right: 90px;
     color: var(--black);
 font-family: Raleway;
@@ -149,7 +152,7 @@ font-weight: 700;
 letter-spacing: 0.78px;
 text-decoration: none;
 }
-.logo span{
+.header__logo span{
     color: var(--sec_color);
 font-family: 'Raleway' , sans-serif;
 font-size: 26px;
@@ -158,7 +161,7 @@ letter-spacing: 0.78px;
 }
 /*---NAVIGATION END---*/
 
-.bg{
+.header__hello{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,7 +173,7 @@ letter-spacing: 0.78px;
     
 }
 
-.bgtext{
+.info__text{
     max-width: 696px;
     font-size: 44px;
     font-weight: 900;
@@ -181,7 +184,7 @@ letter-spacing: 0.78px;
     letter-spacing: 2.64px;
   
 }
-.btn{
+.info__btn{
     color: var(--white);
     font-size: 16px;
     font-weight: 700;
@@ -192,25 +195,26 @@ letter-spacing: 0.78px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     flex-shrink: 0;
     min-height: 50px;
+    padding: 10px 24px;
 }
 
-.btn:hover{
+.info__btn:hover{
     border: var(--sec_color);
 }
 
-.btn:focus{
+.info__btn:focus{
     border: var(--sec_color) 2px;
 }
 /*-----HEADER end------*/
 
 /*-----ABOUT start------*/
-.nature{
+.about__list{
     display: flex;
     justify-content: space-around;
     margin-top: 94px;
     margin-bottom: 94px;
 }
-.ph{
+.about__h{
     color: var(--none_black);
 
     font-size: 14px;
@@ -220,7 +224,7 @@ letter-spacing: 0.78px;
     max-width: 270px;
 }
 
-.pt{
+.about__text{
     color: var(--grey);
     font-size: 14px;
     line-height: 171%;
@@ -230,13 +234,13 @@ letter-spacing: 0.78px;
 /*-----ABOUT end------*/
 
 /*-----WORK start------*/
-.photojob{
+.work__list{
     margin-top: 50px;
     display: flex;
     margin-bottom: 188px;
 }
 
-.job-img{
+.work__img{
   margin-right: 30px;  
 }
 
@@ -249,7 +253,7 @@ letter-spacing: 0.78px;
     
 }
 
-.staffinfo{
+.staff__list{
     display: flex;
     
 }
@@ -258,7 +262,7 @@ letter-spacing: 0.78px;
     padding-top: 94px;
     margin-bottom: 50px;
 }
-.person{
+.staff__item{
     margin-right: 30px; 
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
@@ -268,7 +272,7 @@ letter-spacing: 0.78px;
 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.jobtext , .stafftext {
+.work__text , .stafftext {
     color: var(--none_black);
     text-align: center;
     font-size: 36px;
@@ -276,7 +280,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     letter-spacing: 1.08px;
 }
 
-.person-name{
+.staff__name{
     color: var(--none_black);
     text-align: center;
     font-size: 16px;
@@ -284,7 +288,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     letter-spacing: 0.48px;
 }
 
-.person-job{
+.staff__job{
     color: var(--grey);
     text-align: center;
     font-size: 16px;
@@ -293,7 +297,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 /*-----STAFF end------*/
 
 /*-----FOOTER start------*/
-.footerbg{
+.footer__info{
     width: 100%;
     padding: 60px 0;
     flex-direction: column;
@@ -303,43 +307,25 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     min-height: 251px;
 }
 
-.footer-info{
+.footer__link{
+    margin-top: 28px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.address{
-    color: var(--white);
-    font-size: 14px;
-    line-height:114%;
-    letter-spacing: 0.42px;
-}
-
-.email-footer{
+.footer__email{
     color: rgba(255, 255, 255, 0.60);
-    font-size: 14px;
-    line-height: 114%;
-    letter-spacing: 0.42px;
+
 }
 
-.adress{
-    color: var(--white);
-    font-size: 14px;
-    line-height: 114%;
-    letter-spacing: 0.42px;
-}
-.tel-footer{
+.footer__tel{
     color: rgba(255, 255, 255, 0.60);
-    font-size: 14px;
-    line-height: 114%;
-    letter-spacing: 0.42px;
+
 }
 
-.footer-logo{
-    margin-bottom: 28px;
-}
-.logo-footer{
+
+.footer__logo{
     margin-right: 90px;
     color: var(--white);
     font-family: 'Raleway' , sans-serif;
@@ -349,7 +335,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     text-decoration: none;
 }
 
-.logo-footer span{
+.footer__logo span{
     color: var(--sec_color);
     font-family: 'Raleway' , sans-serif;
     font-size: 26px;
@@ -362,13 +348,13 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 /*-----PORTFOLIO-----*/
 
 /*----FILTERS start*/
-.navbar{
+.filters__list{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul.navbar li button.pbtn {
+.filters__item button.filters__button {
     color: #212121;
     text-align: center;
     font-size: 16px;
@@ -387,13 +373,13 @@ ul.navbar li button.pbtn {
     margin-bottom: 54px;
 }
 
-ul.navbar li button.pbtn:hover{
+.filters__item button.filters__button:hover{
     color: var(--white);
     border-radius: 4px;
     background: var(--sec_color);
 }
 
-ul.navbar li button.pbtn:focus{
+.filters__item button.filters__button:focus{
     color: var(--white);
     border-radius: 4px;
     background: var(--sec_color);
@@ -403,7 +389,7 @@ ul.navbar li button.pbtn:focus{
 /*----GRID start----*/
 
 
-.portfolios{
+.portfolios__list{
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 370px);
@@ -414,7 +400,7 @@ ul.navbar li button.pbtn:focus{
     margin-bottom: 94px;
     border: 1px solid #EEE;
 }
-.pname{
+.portfolios__name{
     color: var(--none_black);
     font-size: 18px;
     font-weight: 700;
@@ -424,7 +410,7 @@ ul.navbar li button.pbtn:focus{
     padding-left: 24px;
 }
 
-.cat{
+.portfolios__desc{
     color: var(--grey);
     font-size: 16px;
     line-height: 187%;
