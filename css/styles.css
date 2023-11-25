@@ -39,6 +39,7 @@ a,button{
     font-family: inherit;
     text-decoration: none;
     color:inherit;
+    
 } 
 
 button{
@@ -78,7 +79,7 @@ ul ,li {
 /*-----HEADER start------*/
 
 .header{
-    display: flexbox;
+    display: flex;
     width: 100%;
     border-bottom: 1px solid #EEE;
 }
@@ -86,6 +87,8 @@ ul ,li {
 .navigation{
     display: flex;
 }
+
+
 .navigation__item a  {
     font-size: 14px;
     color: var(--none_black);
@@ -179,7 +182,7 @@ letter-spacing: 0.78px;
     justify-content: center;
     align-items: center;
     height: auto;
-    background: var(--basic_color);
+    background: rgba(47, 48, 58, 0.40) url(../img/hello-pic.jpg);
     row-gap: 30px;
     min-height: 600px;
     
@@ -230,7 +233,7 @@ letter-spacing: 0.78px;
 }
 .about__h{
     color: var(--none_black);
-
+    margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
@@ -314,6 +317,7 @@ letter-spacing: 0.78px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
+    margin-bottom: 10px;
 }
 
 .staff__job{
@@ -419,6 +423,7 @@ letter-spacing: 0.78px;
 
 .portfolios{
     padding-top: 50px;
+    padding-bottom: 94px;
 }
 
 .portfolios__list{
@@ -437,8 +442,6 @@ letter-spacing: 0.78px;
     font-weight: 700;
     line-height: 200%;
     letter-spacing: 1.08px;
-    width: 322px;
-    padding-left: 24px;
 }
 
 .portfolios__desc{
@@ -446,8 +449,8 @@ letter-spacing: 0.78px;
     font-size: 16px;
     line-height: 187%;
     letter-spacing: 0.48px;
-    width: 322px;
-    padding-left: 24px;
+    width: 100%;
+    padding:20px 24px;
 }
 
 
