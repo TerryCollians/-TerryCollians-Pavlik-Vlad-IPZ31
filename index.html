@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,18 +14,18 @@
 
     <header id="header" class="header">
         <div class="container">  
-                <a href="index.html" class="logo"><span>Web</span>Studio</a>
+                <a href="index.html" class="header__logo"><span>Web</span>Studio</a>
                 <nav>
                    <ul class = "navigation">
-                        <li>
-                            <a href="#">Студія</a>
+                        <li class="navigation__item">
+                            <a href="index.html">Студія</a>
                             
                         </li>
-                        <li>
+                        <li class="navigation__item">
                             <a href="portfolio.html">Портфоліо</a>
                             
                         </li>
-                        <li>
+                        <li class="navigation__item">
                             <a href="#">Контакти</a>
                             
                         </li>
@@ -32,47 +33,47 @@
                     </ul>
                 </nav>        
                 
-                <ul>
-                    <li>
+                <ul class="contacts">
+                    <li class="contacts__item">
                         <a href="maito:info@devstudio.com" class="mail">info@devstudio.com</a>
                     </li>
-                    <li>
+                    <li class="contacts__item">
                         <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a> 
                     </li>
                 </ul>
         </div>
-        <section id = "bgin" class ="bgin">
-                <div class="bg">
-                    <h1 class="bgtext">Ефективні рішення для вашого бізнесу</h1>
-                    <button class="btn" type="button">Замовити послугу</button>
-                </div>
-        </section>
+        
     </header>
 
     <main>
+        <section id = "info" class ="info">
+            
+            <div class="header__hello">
+                <h1 class="info__text">Ефективні рішення для вашого бізнесу</h1>
+                <button class="info__btn" type="button">Замовити послугу</button>
+            </div>
+          
+        </section>   
+
         <section id="about" class="about">
             
             <div class="container">
-                    <ul class="nature">
-                        <li class="point">
-                            <!-- 
-                                ph - point-header          
-                                pt - point-text 
-                            -->
-                            <h3 class="ph">УВАГА ДО ДЕТАЛЕЙ</h3>
-                            <p class="pt">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <h3 class="about__h">УВАГА ДО ДЕТАЛЕЙ</h3>
+                            <p class="about__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                         </li>
-                        <li class="point">
-                            <h3 class="ph">ПУНКТУАЛЬНІСТЬ</h3>
-                            <p class="pt">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                        <li class="about__item">
+                            <h3 class="about__h">ПУНКТУАЛЬНІСТЬ</h3>
+                            <p class="about__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                         </li>                                                                                               
-                        <li class="point">                                                                                             
-                            <h3 class="ph">ПЛАНУВАННЯ</h3>
-                            <p class="pt">Так само консультація з широким активом значною мірою зумовлює.</p>
+                        <li class="about__item">                                                                                             
+                            <h3 class="about__h">ПЛАНУВАННЯ</h3>
+                            <p class="about__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                         </li>
-                        <li class="point">
-                            <h3 class="ph">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                            <p class="pt">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                        <li class="about__item">
+                            <h3 class="about__h">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                            <p class="about__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                         </li>
                     </ul> 
             </div>
@@ -81,16 +82,16 @@
         <section id="work" class="work">
             <div class="container">
                 
-                    <h2 class="jobtext">Чим ми займаємося</h2>
-                    <ul class = "photojob">
-                        <li>
-                            <img src="img/img1.jpg" width="370" height="294" alt="Фото з клавіатурою">
+                    <h2 class="work__text">Чим ми займаємося</h2>
+                    <ul class = "work__list">
+                        <li class="work__item">
+                            <img  class= "work__img" src="img/img1.jpg" width="370" height="294" alt="Фото з клавіатурою">
                         </li>
-                        <li>
-                            <img src="img/img2.jpg" width="370" height="294" alt="Фото з телефоном">
+                        <li class="work__item">
+                            <img class= "work__img" src="img/img2.jpg" width="370" height="294" alt="Фото з телефоном">
                         </li>
-                        <li>
-                            <img src="img/img3.jpg" width="370" height="294" alt="Фото з палітрою">
+                        <li class="work__item">
+                            <img class= "work__img" src="img/img3.jpg" width="370" height="294" alt="Фото з палітрою">
                         </li>
                     </ul>
             </div>
@@ -98,26 +99,34 @@
         <section id="staff" class="staff">
             <div class="container">
                 <h2 class = "stafftext">Наша команда</h2>
-                <ul class = "staffinfo">
-                    <li class="person">
+                <ul class = "staff__list">
+                    <li class="staff__item">
                         <img src="img/person1.jpg" width="270" height="260" alt="Ігор Дем'яненко">
-                        <h3 class="person-name">Ігор Дем'яненко</h3>
-                        <p class="person-job">Product Designer</p>
+                        <div class="staff__desc">
+                            <h3 class="staff__name">Ігор Дем'яненко</h3>
+                            <p class="staff__job">Product Designer</p>
+                        </div>
                     </li>
-                    <li class="person">
+                    <li class="staff__item">
                         <img src="img/person2.jpg" width="270" height="260" alt="Ольга Рєпіна">
-                        <h3 class="person-name">Ольга Рєпіна</h3>
-                        <p class="person-job">Frontend Developer</p>
+                        <div class="staff__desc">
+                            <h3 class="staff__name">Ольга Рєпіна</h3>
+                            <p class="staff__job">Frontend Developer</p>
+                        </div>
                     </li>
-                    <li class="person">
+                    <li class="staff__item">
                         <img src="img/person3.jpg" width="270" height="260" alt="Микола Тарасов">
-                        <h3 class="person-name">Микола Тарасов</h3>
-                        <p class="person-job">Marketing</p>
+                        <div class="staff__desc">
+                            <h3 class="staff__name">Микола Тарасов</h3>
+                            <p class="staff__job">Marketing</p>
+                        </div>
                     </li>
-                    <li class="person">
+                    <li class="staff__item">
                         <img src="img/person4.jpg" width="270" height="260" alt="Михайло Єрмаков">
-                        <h3 class="person-name">Михайло Єрмаков</h3>
-                        <p class="person-job">UI Designer</p>
+                        <div class="staff__desc">
+                            <h3 class="staff__name">Михайло Єрмаков</h3>
+                            <p class="staff__job">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -127,17 +136,16 @@
 
     
     <footer id="footer" class="footer">
-        <div class="container">
-            <div class="footerbg">
-            <a href="index.html" class="logo-footer" rel="nofollow"><span>Web</span>Studio</a>
-                <address>
-                    <a class="adress" href="http://surl.li/neaiq" rel="nofollow">м. Київ, пр-т Лесі Українки, 26</a>
-                    <a class="email-footer" href="maito:info@devstudio.com" rel="nofollow">info@devstudio.com</a>    
-                    <a class="tel-footer" href="tel:+380961111111" rel="nofollow">+38 096 111 11 11</a> 
+        <div class="footer__info">
+            <div class="container">
+                <a href="index.html" class="footer__logo" ><span>Web</span>Studio</a>     
+                <address class="footer__link">
+                    <a class="footer__location" href="http://surl.li/neaiq" rel="nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+                    <a class="footer__email" href="maito:info@devstudio.com" >info@devstudio.com</a>    
+                    <a class="footer__tel" href="tel:+380961111111" >+38 096 111 11 11</a> 
                 </address> 
-                  
-            </div>         
-        </div>
+            </div>
+        </div>                
     </footer>
 </body>
 </html>
