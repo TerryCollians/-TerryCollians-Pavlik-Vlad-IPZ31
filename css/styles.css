@@ -1,3 +1,5 @@
+@import url(./modern-normalize.css);
+
 :root {
     /* Шаблон взято з інтернету + додано основні кольори (думаю не критично ) */
     --black: #000;                              
@@ -79,101 +81,83 @@ ul ,li {
 /*-----HEADER start------*/
 
 .header{
-    display: flex;
     width: 100%;
     border-bottom: 1px solid #EEE;
 }
 /*---NAVIGATION START---*/
-.navigation{
-    display: flex;
-}
-
-
-.navigation__item a  {
-    font-size: 14px;
-    color: var(--none_black);
-    font-weight: 500;
-    letter-spacing: 0.28px;   
-    
-}
-
-.navigation__item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.navigation__item a:hover{
-    color: var(--sec_color);
-}
-.navigation__item a:focus{
-    color:var(--sec_color);
-}
-
-.mail:hover{
-    color:var(--sec_color);
-}
-.mail:focus{
-    color:var(--sec_color);
-}
-.tel:focus{
-    color:var(--sec_color);
-}
-.tel:hover{
-    color:var(--sec_color);
-}
-
-.contacts{
-    margin-left: auto;
-    display: flex;
-    
-}
-
-.contacts__item:not(:last-child) {
-    margin-right: 40px;
-}
-
-
-.mail{
-    font-size: 14px;
-    text-decoration: none;    
-    color: var(--grey);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-}
-
-.tel{
-    font-size: 14px;
-    text-decoration: none;
-    color: var(--grey);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-}
 
 .header > .container{
     display: flex;
     align-items: center;
     height: auto;
-    flex-shrink: 0;
     min-height: 80px;
 }
 
 .header__logo {
-    margin-right: 90px;
-    color: var(--black);
-font-family: Raleway;
-font-size: 26px;
-font-weight: 700;
-letter-spacing: 0.78px;
-text-decoration: none;
-}
-.header__logo span{
-    color: var(--sec_color);
+color: var(--black);
 font-family: 'Raleway' , sans-serif;
 font-size: 26px;
 font-weight: 700;
 letter-spacing: 0.78px;
+margin-left: 0 auto;
 }
+
+.header__logo span{
+    color: var(--sec_color);
+}
+
+.navigation{
+    margin-left: 93px;
+    display: inline-flex;
+    gap:50px;
+}
+
+
+
+.navigation__item{
+color: var(--none_black);
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 0.28px;
+}
+
+
+.navigation__item a:hover{
+    color: var(--sec_color) ;
+}   
+.navigation__item a:focus{
+    color: var(--sec_color);
+}
+
+.contacts{
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+    min-height: 80px;
+    margin-left: auto;
+    gap: 40px;
+}
+
+.mail__svg , .tel__svg{
+    fill:var(--grey);
+    margin-right:10px;
+}
+
+
+
+
+.contacts__item a:hover{
+    color: var(--sec_color);
+}
+.contacts__item a:focus{
+    color: var(--sec_color);
+}
+
+
 /*---NAVIGATION END---*/
 
 .header__hello{
@@ -185,6 +169,7 @@ letter-spacing: 0.78px;
     background: rgba(47, 48, 58, 0.40) url(../img/hello-pic.jpg);
     row-gap: 30px;
     min-height: 600px;
+    background-size: cover;
     
 }
 
@@ -206,7 +191,7 @@ letter-spacing: 0.78px;
     line-height: 187%;
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: #2196F3;
+    background: var(--sec_color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     flex-shrink: 0;
     min-height: 50px;
@@ -287,7 +272,7 @@ letter-spacing: 0.78px;
 }
 .staff__item{
     border-radius: 0px 0px 4px 4px;
-    background: #FFF;
+    background: var(--white);
     
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -335,7 +320,7 @@ letter-spacing: 0.78px;
     flex-direction: column;
     height: auto;
     flex-shrink: 0;
-    background: #2F303A;
+    background: var(--basic_color);
     min-height: 251px;
 }
 
@@ -451,6 +436,7 @@ letter-spacing: 0.78px;
     width: 100%;
     padding:20px 24px;
 }
+
 
 
 
