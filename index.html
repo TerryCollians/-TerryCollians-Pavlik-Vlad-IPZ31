@@ -55,9 +55,20 @@
             
             <div class="header__hello">
                 <h1 class="info__text">Ефективні рішення для вашого бізнесу</h1>
-                <button class="info__btn" type="button">Замовити послугу</button>
+                <button class="info__btn" data-modal-open type="button">Замовити послугу</button>
             </div>
-          
+            <div class="modal is-hidden" data-modal>
+                <div class="modal__frame">
+                    <button data-modal-close>
+                        <a class="modal__frame-close" href="#">
+                          <svg class="close-icon">
+                            <use href="./img/sprite.svg#close-btn"></use>
+                          </svg>
+                        </a>
+                    </button>
+                
+                </div>
+            </div>
         </section>   
         <section id="about" class="about">
             <div class="container">
@@ -100,13 +111,31 @@
                     <h2 class="work__text">Чим ми займаємося</h2>
                     <ul class = "work__list">
                         <li class="work__item">
+                            <div class="work__overlay">
+                                <p class="work__overlay-text">
+                                    ДЕСКТОПНІ ДОДАТКИ
+                                </p>
+                            </div>
                             <img  class= "work__img" src="img/img1.jpg" width="370" height="294" alt="Фото з клавіатурою">
+                            
                         </li>
                         <li class="work__item">
+                            <div class="work__overlay">
+                                <p class="work__overlay-text">
+                                    МОБІЛЬНІ ДОДАТКИ
+                                </p>
+                            </div>
                             <img class= "work__img" src="img/img2.jpg" width="370" height="294" alt="Фото з телефоном">
+                            
                         </li>
                         <li class="work__item">
+                            <div class="work__overlay">
+                                <p class="work__overlay-text">
+                                    ДИЗАЙНЕРСЬКІ РІШЕННЯ
+                                </p>
+                            </div>
                             <img class= "work__img" src="img/img3.jpg" width="370" height="294" alt="Фото з палітрою">
+                            
                         </li>
                     </ul>
             </div>
@@ -288,7 +317,7 @@
                     </ul>
                 </div>
             </div>
-                     
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
