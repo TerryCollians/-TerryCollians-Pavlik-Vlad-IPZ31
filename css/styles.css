@@ -201,13 +201,16 @@ letter-spacing: 0.28px;
 
 /*---NAVIGATION END---*/
 
+.info{
+    background: url(/img/hello-pic.jpg), lightgray 0px -147.517px / 100% 170.667% no-repeat;
+}
+
 .header__hello{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
-    background: rgba(47, 48, 58, 0.40) url(../img/hello-pic.jpg);
     row-gap: 30px;
     min-height: 600px;
     background-size: cover;
@@ -350,9 +353,7 @@ letter-spacing: 0.28px;
   margin-bottom: 30px;
   }
 
-  .about__svg:not(:last-child){
-    margin-right: 30px;
-  }
+  
 
 /*-----ABOUT end------*/
 
@@ -525,13 +526,13 @@ letter-spacing: 0.28px;
 
 .footer .container{
     display: flex;
+    align-items: baseline;
+    gap:90px;
 }
 
 .footer-social{
     display: flex;
     flex-direction: column;
-    margin-left: 94px;
-    margin-top: 12px;
 }
 
 .footer-social__list{
@@ -616,15 +617,15 @@ letter-spacing: 0.28px;
 
 /*----FILTERS start*/
 
-.filters{
-    padding-top: 94px;
-}
+
 
 .filters__list{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    padding-bottom: 56px;
+    
 }
 
 .filters__item button.filters__button {
@@ -732,6 +733,8 @@ letter-spacing: 0.28px;
     padding-bottom: 94px;
 }
 
+
+
 .portfolios__list{
     display: grid;
     gap: 30px;
@@ -747,6 +750,12 @@ letter-spacing: 0.28px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
+
+.portfolios-item:focus{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
 .portfolios__name{
     color: var(--none_black);
     font-size: 18px;
@@ -763,6 +772,7 @@ letter-spacing: 0.28px;
     width: 100%;
     padding:20px 24px;
 }
+
 
 .portfolios__img{
     position: relative;
